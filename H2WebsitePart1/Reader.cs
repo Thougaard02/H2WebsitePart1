@@ -24,6 +24,7 @@ namespace H2WebsitePart1
                 // Display the content.
                 Console.WriteLine(responseFromServer);
             }
+            _response.Response_.Close();
         }
     }
 }
