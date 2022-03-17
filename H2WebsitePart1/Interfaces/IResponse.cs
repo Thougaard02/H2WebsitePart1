@@ -9,6 +9,6 @@ namespace H2WebsitePart1.Interfaces
     public interface IResponse
     {
         public WebResponse Response_ { get; set; }
-        public IRequest Request { get; set; }
+        public IWebRequest Request { get; set; }
     }
 }

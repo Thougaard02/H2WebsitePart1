@@ -7,7 +7,6 @@ namespace H2WebsitePart1
 {
     public interface IRequest
     {
-        public WebRequest _webRequest { get; set; }
         void CreateRequest(string request);
     }
 }

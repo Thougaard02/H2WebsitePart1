@@ -7,11 +7,15 @@ namespace H2WebsitePart1
     {
         static void Main(string[] args)
         {
-            IRequest request = new Request();
+            IWebRequest request = new Request();
             request.CreateRequest("https://giphy.com/gifs/rick-roll-g7GKcSzwQfugw");
             IResponse response = new Response(request);
-            IReader reader = new Reader(response);
+            IWebRequestReader reader = new WebRequestReaderReader(response);
             reader.Read();
+
+            IFileReader fileReader = new LocalFile();
+
+            Console.WriteLine(fileReader.Read(@"C:\Users\rasmu\OneDrive\Dokumenter\bla.txt"));
         }
     }
 }

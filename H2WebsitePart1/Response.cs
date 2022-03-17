@@ -10,12 +10,12 @@ namespace H2WebsitePart1
     public class Response : IResponse
     {
         public WebResponse Response_ { get; set ; }
-        public IRequest Request { get; set ; }
+        public IWebRequest Request { get; set ; }
 
-        public Response(IRequest request)
+        public Response(IWebRequest request)
         {
             Request = request;
-            Response_ = Request._webRequest.GetResponse();
+            Response_ = request._webRequest.GetResponse();
         }
     }
 }

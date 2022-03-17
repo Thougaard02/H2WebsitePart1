@@ -6,10 +6,10 @@ using System.Text;
 
 namespace H2WebsitePart1
 {
-    public class Reader : IReader
+    public class WebRequestReaderReader : IWebRequestReader
     {
         private IResponse _response;
-        public Reader(IResponse response)
+        public WebRequestReaderReader(IResponse response)
         {
             _response = response;
         }
