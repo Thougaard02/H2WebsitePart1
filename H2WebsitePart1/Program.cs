@@ -9,13 +9,13 @@ namespace H2WebsitePart1
         {
             IWebRequest request = new Request();
             request.CreateRequest("https://giphy.com/gifs/rick-roll-g7GKcSzwQfugw");
+            
             IResponse response = new Response(request);
-            IWebRequestReader reader = new WebRequestReaderReader(response);
+            IWebRequestReader reader = new WebRequestReader(response);
             reader.Read();
 
             IFileReader fileReader = new LocalFile();
-
-            Console.WriteLine(fileReader.Read(@"C:\Users\rasmu\OneDrive\Dokumenter\bla.txt"));
+            Console.WriteLine(fileReader.Read(@"C:\Users\Umbraco\Documents\Database.txt"));
         }
     }
 }

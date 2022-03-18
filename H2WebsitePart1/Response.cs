@@ -15,7 +15,7 @@ namespace H2WebsitePart1
         public Response(IWebRequest request)
         {
             Request = request;
-            Response_ = request._webRequest.GetResponse();
+            Response_ = Request._webRequest.GetResponse();
         }
     }
 }

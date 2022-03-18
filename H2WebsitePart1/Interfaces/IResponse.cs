@@ -8,7 +8,7 @@ namespace H2WebsitePart1.Interfaces
 {
     public interface IResponse
     {
-        public WebResponse Response_ { get; set; }
-        public IWebRequest Request { get; set; }
+        WebResponse Response_ { get; set; }
+        IWebRequest Request { get; set; }
     }
 }
